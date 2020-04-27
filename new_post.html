@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/new_post.css">
+    <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> 
+    from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="./javascript/ajax.js"></script>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="head_wrap">
+            <a href="./index.html">
+                <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                    alt="인스타그램로고">
+            </a>
+        </div>
+    </header>
+    <div class="wrap">
+        <div class="contain_wrap">
+            <div class="container">
+                <!-- 순차적으로 변경되게 -->
+                <img src="./img/basic.png" alt="" class="item1">
+
+            </div>
+        </div>
+
+        <!-- 피드 업로드 칸 -->
+        <div class="make_container">
+            <img src="./img/new.png" alt="new" class="brand_new">
+            <form action="#" id="fileForm" method="POST" enctype="multipart/form-data">
+                <textarea name="postText" id="postText" cols="25" rows="10"></textarea>
+                <!-- 업로드한 이미지를 files라는 배열에 넣기 -->
+                <input id="imgFile" type="file" multiple class="pick" name="imgFile" accept=".jpg,.jpeg,.png" />
+                <button type="button" id="upload_feed" onclick="createPost()">피드
+                    올리기</button>
+            </form>
+        </div>
+    </div>
+    <script src="./javascript/new_post.js"></script>
+
+</body>
+
+</html>

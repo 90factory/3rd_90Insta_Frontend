@@ -1,0 +1,80 @@
+.wrappers {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-bottom: 44px;
+}
+#back_pic {
+    background: url("https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png");
+    width: 454px; 
+    height: 618px;
+    position: relative;
+    
+}
+#img_phone {
+    position: absolute;
+    top: 99.5px;
+    left: 150.5px;
+    width: 240px;
+    height: 427px;
+
+}
+section.login--sub {
+    padding-top: 18px;
+}
+
+.sub--wrapper {
+    width: 350px;
+    /* height: 377.8px; */
+    margin: 0 auto;
+    background: white;
+    text-align: center;
+    margin-top: 15px;
+    border: 1px solid #dbdbdb;
+}
+.sub--wrapper form {
+    margin-top: 22px;
+}
+
+.sub--box a div {
+    margin-top: 12px;
+}
+.pw {
+    padding-top: 9px;
+    padding-bottom: 15px;
+}
+.facebook_wrap {
+    color: #385185;
+    margin-bottom: 15px;
+}
+.facebook {
+    width: 16px;
+    height: 16px;
+}
+.fault_input {
+    font-size: 14px; 
+    color: red;
+    margin: 10px auto;
+    font-weight: 400;
+}
+.pw_wrap {
+    display: flex;
+    position: relative;
+}
+.show_wrap {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 100px;
+    height: 38px;
+
+
+}
+.show_pw div {
+    all: unset;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 12px auto;
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.sub--wrapper {
+    width: 350px;
+    height: 377.8px;
+    margin: 0 auto;
+    background: white;
+    text-align: center;
+    margin-top: 15px;
+    border: 1px solid #dbdbdb;
+}
+.sub--wrapper form {
+    margin-top: 22px;
+}
+
+.sub--box a div {
+    margin-top: 12px;
+}
+.pw {
+    padding-top: 9px;
+}

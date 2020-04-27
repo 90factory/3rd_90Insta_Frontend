@@ -1,0 +1,44 @@
+.container .con_wrapper {
+    height: 563.4px;
+    width: 100%;
+    margin: 44px auto;
+}
+.con_wrapper .welcome {
+    height: 400px;
+    width: 388px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 105px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    position: relative;
+}
+.con_wrapper .welcome_box {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.welcome_box .icon-welcome {
+    width: 100px;
+    height: 100px;
+    margin: 50px 146px 30px 146px;
+}
+.text-margin {
+    margin-bottom: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.back-login {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 44px;
+    border: 0.3px solid #dbdbdb;
+    background: #fafafa;
+}
+.back-login a {
+    padding: 1px;
+}

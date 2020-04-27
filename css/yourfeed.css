@@ -1,0 +1,310 @@
+/* 검색창 + 모달 */
+/*  */
+
+/* 프로필 상단 */
+.profile--wrapper {
+    width: 935px;
+    height: 200px;
+    /* background: rgb(216, 255, 250); */
+    border-bottom: 1px solid gainsboro;
+}
+
+.feed_top {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 44px;
+    display: flex;
+    /* background: rgb(255, 225, 219); */
+}
+
+.pro_img {
+    width: 291.66px;
+    height: 150px;
+    margin-right: 30px;
+}
+
+.pro_img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mypro--text {
+    width: 613.34px;
+
+}
+
+.mypro_top {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    height: 40px;
+}
+
+.mypro_edit {
+    display: flex;
+    align-items: center;
+}
+
+/* BUTTON */
+.mypro_edit a .button--mes {
+    width: 115px;
+    height: 25.6px;
+    background: #fafafa;
+    font-size: 14px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    margin-right: 10px;
+}
+
+.btn-follow {
+    width: 64px;
+    height: 25.6px;
+    padding: 0 24px;
+    border: 1px solid #dbdbdb;
+    background: #f8f8f8;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.btn-follow img {
+    width: 20px;
+    height: 21.5px;
+}
+
+.mypro_top .mypro_edit button {
+    cursor: pointer;
+}
+
+.btn-recom {
+    width: 34px;
+    height: 27.6px;
+    border: 1px solid #dbdbdb;
+    background: #f8f8f8;
+    border-radius: 3px;
+    margin-right: 2px;
+}
+
+.btn-recom img {
+    width: 19px;
+    height: 19px;
+}
+
+.btn-ban {
+    cursor: pointer;
+}
+
+.mypro_edit .btn-ban img {
+    width: 20px;
+    height: 22px;
+    margin-left: 15px;
+}
+
+.mypro_mid {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    height: 17.6px;
+
+}
+
+.mypro_id {
+    margin-right: 20px;
+}
+
+.feed--num {
+    display: flex;
+    padding-right: 46px;
+}
+
+.feed_count {
+    margin-right: 5px;
+}
+
+.mypro_bottom {
+    /* position: absolute; */
+    /* background: yellow; */
+    width: 100%;
+    height: 48px;
+}
+
+.feed--intro {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    /* float: left; */
+}
+
+
+.mypro_name {
+    float: left;
+}
+
+.mypro_info {
+    float: left;
+}
+
+/* 하단 피드 네비게이션 */
+.content--nav {}
+
+.content--nav ul {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.content--nav ul li {
+    cursor: pointer;
+}
+
+.content--nav ul li .nav-specify {
+    margin-left: 6px;
+}
+
+.feed-nav {
+    display: flex;
+    /* width: 100%; */
+    width: 57px;
+    height: 53px;
+    margin-right: 60px;
+    align-items: center;
+}
+
+.feed-nav.selected {
+    border-top: 1px solid #000;
+}
+
+.feed-nav img {
+    width: 12px;
+    height: 12px;
+}
+
+/* 하단 피드 */
+/* 20200421 정빈 수정*/
+.feed_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* 하단 피드 */
+.feed_mine {
+    /* width: 935px;
+    height: 304.6px; */
+    /* position: relative; */
+    /* height: 3000px; */
+}
+
+.feed_mine a {
+    text-decoration: none;
+}
+
+
+.myfeed {
+    background: url("../img/pic_5.jpg");
+    width: 275px;
+    height: 275px;
+    background-size: cover;
+    margin-right: 28px;
+    margin-bottom: 28px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    /* border-box는 빼도 무방? */
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+}
+
+.myfeed .fav {
+    color: #fff;
+    opacity: 0;
+    z-index: 99999;
+    margin: 0 auto;
+
+}
+
+.myfeed:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+}
+
+.myfeed:hover .fav {
+    opacity: 1;
+}
+
+/* 모달창 구현 */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.md_overlay {
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.md_content {
+    width: 400px;
+    height: 144px;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal button {
+    display: block;
+    margin: 0 auto;
+}
+
+.modal_wrapper .wrap {
+    width: 100%;
+    /* height: 48px; */
+    border-bottom: 1px solid gainsboro;
+    font-size: 14px;
+    color: #ed4956;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal_wrapper .wrap div {
+    /* 수직 정렬.... 왜 안돼ㅜㅜ */
+    /* background: ; */
+    margin: 17.5px auto;
+}
+
+.modal_wrapper .wrap_bot .btn_close {
+    width: 100%;
+    height: 48px;
+    padding: 0 auto;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn_close {
+    all: unset;
+}

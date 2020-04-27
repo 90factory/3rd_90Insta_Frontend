@@ -1,0 +1,422 @@
+@media screen and (min-width: 1001px) {
+    section {
+        background: white;
+        width: 933px;
+        height: 714px;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 85px;
+        align-content: space-between;
+        border: 1px solid #dbdbdb;
+    }
+
+    .setting_wrapper .setting_list {
+        width: 237px;
+        border-right: 1px solid #dbdbdb;
+    }
+
+    .setting_list ul li a {
+        display: block;
+        width: 188px;
+        height: 20px;
+        padding: 16px 16px 16px 30px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /* .setting_list ul li:first-child {
+  border-left: 2px solid black;
+  font-weight: bold;
+} */
+    /* .setting_list ul li:nth-child(2) {
+  border-left: 2px solid black;
+  font-weight: bold;
+} */
+    .ckeck {
+        border-left: 2px solid black;
+        font-weight: bold;
+    }
+
+    .setting_profile {
+        display: flex;
+        width: 696px;
+        height: 42.1px;
+        margin-top: 32px;
+        /* margin-bottom: 15px; */
+    }
+
+    .setting_profile aside {
+        width: 194px;
+        height: 41.2px;
+
+    }
+
+    .setting_profile div div {
+        font-size: 20px;
+    }
+
+    .setting_profile div button {
+        all: unset;
+        color: #38a5ec;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+    .setting_box .setting_profile aside img {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        float: right;
+        padding: 0 30px;
+    }
+
+    #blah {
+        margin-left: 15px;
+        margin-top: 1px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+
+    .setting_contents {
+        display: flex;
+        margin: 13px auto;
+    }
+
+    .setting_contents aside {
+        display: block;
+        width: 130px;
+        height: 32px;
+        padding: 0 32px;
+        margin-top: 8px;
+    }
+
+    .setting_contents aside label {
+        float: right;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    form input {
+        all: unset;
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        width: 295px;
+        height: 30px;
+    }
+
+    form textarea {
+        /* all: unset; */
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        width: 295px;
+        height: 50px;
+    }
+
+    form input.input_long {
+        height: 55px;
+    }
+
+    .room {
+        margin-top: 25px;
+    }
+
+    .rec_check {
+        width: 190px;
+        height: 40px;
+    }
+
+    .check_wrap {
+        display: flex;
+    }
+
+    .checkbox {
+        width: 16px;
+        height: 16px;
+        position: relative;
+        top: 0;
+        left: 0;
+        border-radius: 3px;
+        border: 1px solid #dbdbdb;
+        /* margin-left: 3px;
+  margin-right: 8px; */
+        margin: 10px 8px 10px 3px;
+        cursor: pointer;
+    }
+
+    .checkbox:hover #checker {
+        display: initial;
+    }
+
+    .checkbox #checker {
+        position: absolute;
+        width: 10.6px;
+        height: 10.6px;
+        top: 3px;
+        left: 3px;
+        display: none;
+    }
+
+    .submit_wrap {
+        width: 328.7px;
+        height: 30px;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .submit_wrap button {
+        all: unset;
+        cursor: pointer;
+    }
+
+    button.btn_submit {
+        width: 48px;
+        height: 30px;
+        background: #0095f6;
+        font-size: 14px;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 5px;
+
+    }
+
+    button.text-blue {
+        color: #38a5ec;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 65px;
+    }
+
+    .btn_pw_change {
+        all: unset;
+        width: 108px;
+        height: 30px;
+        font-size: 14px;
+        background: #0095f6;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        background: white;
+        width: 100%;
+        /* height: 714px; */
+        margin: 0 auto;
+        display: flex;
+        margin-top: 85px;
+        align-content: space-between;
+        border: 1px solid #dbdbdb;
+    }
+
+    .setting_box {}
+
+    #profile_form {
+        margin-left: 6%;
+    }
+
+    .setting_wrapper .setting_list {
+        width: 237px;
+        border-right: 1px solid #dbdbdb;
+        display: none;
+    }
+
+    .setting_list ul li a {
+        display: block;
+        width: 188px;
+        height: 20px;
+        padding: 16px 16px 16px 30px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /* .setting_list ul li:first-child {
+  border-left: 2px solid black;
+  font-weight: bold;
+} */
+    /* .setting_list ul li:nth-child(2) {
+  border-left: 2px solid black;
+  font-weight: bold;
+} */
+    .ckeck {
+        border-left: 2px solid black;
+        font-weight: bold;
+    }
+
+    .setting_profile {
+        display: flex;
+        width: 40%;
+        height: 42.1px;
+        margin-top: 32px;
+        /* margin-bottom: 15px; */
+    }
+
+    .setting_profile aside {
+        width: 194px;
+        height: 41.2px;
+
+    }
+
+    .setting_profile div div {
+        font-size: 20px;
+    }
+
+    .setting_profile div button {
+        all: unset;
+        color: #38a5ec;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 5px;
+        display: block;
+        width: 150px;
+    }
+
+    .setting_box .setting_profile aside img {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        float: right;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    #blah {
+        margin-left: 15px;
+        margin-top: 1px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+
+    .setting_contents {
+        /* display: flex; */
+        margin: 0 auto;
+    }
+
+    .setting_contents aside {
+        display: block;
+        width: 130px;
+        height: 32px;
+        /* padding: 0 32px; */
+        margin-top: 8px;
+    }
+
+    .setting_contents aside label {
+        /* float: right; */
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    form input {
+        all: unset;
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        width: 295px;
+        height: 30px;
+    }
+
+    form textarea {
+        /* all: unset; */
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        width: 295px;
+        height: 50px;
+    }
+
+    form input.input_long {
+        height: 55px;
+    }
+
+    .room {
+        margin-top: 25px;
+    }
+
+    .rec_check {
+        width: 190px;
+        height: 40px;
+    }
+
+    .check_wrap {
+        display: flex;
+    }
+
+    .checkbox {
+        width: 16px;
+        height: 16px;
+        position: relative;
+        top: 0;
+        left: 0;
+        border-radius: 3px;
+        border: 1px solid #dbdbdb;
+        /* margin-left: 3px;
+  margin-right: 8px; */
+        margin: 10px 8px 10px 3px;
+        cursor: pointer;
+    }
+
+    .checkbox:hover #checker {
+        display: initial;
+    }
+
+    .checkbox #checker {
+        position: absolute;
+        width: 10.6px;
+        height: 10.6px;
+        top: 3px;
+        left: 3px;
+        display: none;
+    }
+
+    .submit_wrap {
+        width: 328.7px;
+        height: 30px;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .submit_wrap button {
+        all: unset;
+        cursor: pointer;
+    }
+
+    button.btn_submit {
+        width: 48px;
+        height: 30px;
+        background: #0095f6;
+        font-size: 14px;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 15px;
+
+    }
+
+    button.text-blue {
+        color: #38a5ec;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 65px;
+    }
+
+    .btn_pw_change {
+        all: unset;
+        width: 108px;
+        height: 30px;
+        font-size: 14px;
+        background: #0095f6;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,97 @@
+<article class="contents">
+    <header class="top">
+        <div class="user_container">
+            <div class="profile_img">
+                <img src="img/thumb.jpg" alt="프로필이미지" />
+            </div>
+            <div class="user_name">
+                <div class="nick_name m_text">
+
+                    <a href="javascript:void(0);" onclick="insertWriterId(event); return false;">insta_clone</a>
+                </div>
+            </div>
+        </div>
+        <div class="moreBtn">
+            <button id="open">⋯</button>
+            <div class="modal hidden">
+                <div class="modalOverlay"></div>
+                <div class="modal_content">
+                    <button class="editBtn" onclick="editPost">수정</button>
+                    <button class="deleteBtn" onclick="deletePost(event)">
+                        삭제
+                    </button>
+                    <button class="cancel">취소</button>
+                    <div class="error-msg"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <button class="deleteBtn" onclick="deletePost(event)">
+            삭제
+        </button> -->
+        <!-- <button class="deleteBtn" onclick="deletePost(event)">삭제</button> -->
+
+        <!-- <div class="sprite_more_icon" data-name="more">
+            <ul class="toggle_box">
+                <li>
+                    <input type="submit" class="follow" value="팔로우" data-name="follow" />
+                </li>
+                <li>수정</li>
+                <li>삭제</li>
+            </ul>
+        </div> -->
+    </header>
+    <div class="img_section">
+        <div class="trans_inner">
+            <div>
+                <img src="img/img_section/img01.jpg" alt="visual01" />
+            </div>
+        </div>
+    </div>
+    <div class="bottom_icons">
+        <div class="left_icons">
+            <!--<div class="heart_btn">
+                <div class="sprite_heart_icon_outline" name="39" data-name="heartbeat"></div>
+            </div>-->
+
+            <div class="sprite_bubble_icon" data-name="bubble">
+                <a href="pop.html"></a>
+            </div>
+
+            <div class="sprite_share_icon" data-name="share"></div>
+        </div>
+        <div class="right_icon">
+            <div class="sprite_bookmark_outline" data-name="bookmark"></div>
+        </div>
+    </div>
+    <div class="likes m_text">
+        <!-- <span id="like-count-39">2,346</span> -->
+        <span id="bookmark-count-39"></span>
+    </div>
+
+    <!-- 더보기 만들기 -->
+
+    <div class="writing">
+        <div class="ID" id="id37">
+            <div class="idName m_text">insta_clone</div>
+            <div class="writings" id="writings37">고양이 귀요미~~!</div>
+        </div>
+        <!-- <button onclick="moreClick()">...</button>-->
+        <!-- <button class="moreWatch">... 더 보기</button> -->
+    </div>
+
+    <div class="commenting">
+
+
+        <div class="comment_field" id="addComment37">
+            <input type="text" placeholder="댓글달기..." />
+            <div class="upload_btn m_text" data-name="comment">게시</div>
+        </div>
+    </div>
+
+    <!--<div class="timer">1시간 전</div>
+
+            <div class="comment_field" id="addComment37">
+                <input type="text" placeholder="댓글달기...">
+                <div class="upload_btn m_text" data-name="comment">게시</div>
+            </div>-->
+</article>

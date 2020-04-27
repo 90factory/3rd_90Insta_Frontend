@@ -1,0 +1,270 @@
+/* 공통 */
+.profile_id {
+    margin-right: 10px;
+}
+ul {
+    list-style: none;
+}
+
+/* 개별 게시물 */
+article {
+    display: flex;
+    margin: 0 auto;
+    width: 935px;
+    height: 600px;
+    margin-top: 75px;
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+}
+article .left_img {
+    width: 600px;
+    height: 600px;
+
+}
+.left_img .img_slide {
+    /* transform: translate(-40px,-16px); */
+}
+article .left_img img {
+    width: 600px;
+    height: 590px;
+    transform: translate(0,-16px);
+
+    overflow: hidden;
+    background-size: contain;
+    /* max-width: 100%; */
+}
+
+article .right_side {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.profile_image {
+    width: 42px;
+    height: 42px;
+}
+.profile_image img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile_container {
+    display: flex;
+    padding: 16px;
+    width: 304px;
+    border-bottom: 1px solid #dbdbdb;
+    
+}
+
+.profile_right {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin: 7px 0;
+}
+
+.more_info a img {
+    width: 16px;
+    cursor: pointer;
+}
+.article_container {
+    position: relative;
+    width: 336px;
+    height: 600px;
+}
+
+.article_top {
+    /* display: flex; */
+    padding: 25px 16px 16px 16px;
+    width: 302px;
+    height: 340px;
+    overflow-y: scroll;
+    /* height: 372px; */
+    /* 스크롤 숨기기 */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+}
+.com_wrap2 {
+    display: flex;
+}
+.article_box {
+    width: 237.7px;
+    height: 250px;
+}
+
+.article_top::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.article_detail {
+    float: left;
+    margin-bottom: 5px;
+}
+/* .article_detail .room_make {
+    width: 100px;
+    height: 30px;
+} */
+
+.article_detail .article_line {
+    width: 239.2px;
+    word-break:break-all;
+}
+
+.comments_date {
+    margin: 10px 0 15px 0;
+}
+.btn_collect {
+    display: flex;
+    width: 336px;
+    height: 45px;
+    justify-content: space-between;
+    border-top: 1px solid #dbdbdb;
+}
+.btn_collect .left {
+    display: flex;
+}
+
+.btn_collect .left img {
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btn_collect .right img {
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.likes {
+    width: 302px;
+    padding: 0 16px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.date {
+    width: 302px;
+    padding: 0 16px;
+    margin-bottom: 8px;
+}
+
+.write_comments {
+    width: 304px;
+    height: 47px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dbdbdb;
+}
+
+.write_comments input {
+    all: unset;
+    margin: 16px 0;
+    font-size: 14px;
+    width: 260px;
+    height: 14px;
+}
+
+.write_comments button {
+    all: unset;
+    color: #38a5ec;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+button.new_comments {
+    cursor: pointer;
+}
+
+.align {
+    position: relative;
+}
+
+.align .com_1 {
+    position: absolute;
+    top: 5px;
+    left: -41px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+/* 모달 */
+
+/* 모달창 구현 */
+.modal4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.md_overlay4 {
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.md_content4 {
+    width: 400px;
+    height: 375px;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.modal4.hidden4 {
+    display: none;
+}
+
+.modal4 button {
+    display: block;
+    margin: 0 auto;
+}
+
+.modal_wrapper4 .wrap {
+    width: 100%;
+    /* height: 48px; */
+    border-bottom: 1px solid gainsboro;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+.modal_wrapper4 .wrap.red {
+    color: #ff0000;
+    font-weight: bold;
+}
+.modal_wrapper4 .wrap div {
+    margin: 17.5px auto;
+}
+
+.modal_wrapper4 .wrap_bot .btn_close4 {
+    width: 100%;
+    height: 48px;
+    padding: 0 auto;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+.btn_close4 {
+    all: unset;
+}
+

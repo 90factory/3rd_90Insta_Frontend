@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/login-join.css">
+    <link rel="stylesheet" href="./css/login-main.css">
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./javascript/ajax.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrappers">
+            <div id="back_pic">
+                <img id="img_phone" src="./img/image01.jpg">
+            </div>
+            <!-- <section class="main_content">
+                <div class="wrapper"></div>
+            </section> -->
+            <section class="login--sub">
+                <div class="sub--wrapper">
+                    <!-- <div class="sub--box"> -->
+                    <!-- <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                            alt="인스타그램 로고" class="join--logo"> -->
+                    <img src="./img/instagram5.png" alt="인스타그램 로고" class="join--logo"
+                        style="width: 185px;height: 70px;">
+                    <form action="#" method="POST">
+                        <input type="email" id="login_email" placeholder="이메일 주소" class="join--input">
+                        <div class="pw_wrap">
+                            <input type="password" id="login_password" placeholder="비밀번호" class="join--input">
+                            <div class="show_wrap">
+                                <div id="show_pw">비밀번호 표시</div>
+                            </div>
+                        </div>
+                        <!-- <button disabled="true" type="submit" id="login_request" class="btn-join">로그인</button> -->
+                        <div class="error-msg"></div>
+                        <button type="button" onclick="logIn()" id="login_request" class="btn-join written">로그인</button>
+                    </form>
+                    <div class="or--wrapper">
+                        <div class="or--line"></div>
+                        <div class="or text-ssb">또는</div>
+                        <div class="or--line"></div>
+                    </div>
+                    <a href="#">
+                        <div class="text-mb facebook_wrap">
+                            <img src="./img/facebook-logo2.png" alt="facebook" class="facebook">
+                            Facebook으로 로그인
+                        </div>
+                    </a>
+                    <!-- <div class="fault_input">잘못된 비밀번호 입니다. 다시 확인하세요.</div> -->
+                    <a href="./login--pw.html">
+                        <div class="text-ss pw">비밀번호를 잊으셨나요?</div>
+                    </a>
+                    <!-- </div> -->
+                </div>
+                <div class="join--login--wrapper">
+                    <div class="join--login text-s">
+                        계정이 없으신가요? <a href="./login--join.html" class="text-blue">가입하기</a>
+                    </div>
+                </div>
+                <div class="app--download">
+                    <div class="app--induce text-s">앱을 다운로드 하세요.</div>
+                    <div class="app--install">
+                        <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo" target="_blank">
+                            <img src="./img/install-ios.png" class="ios" alt="App Store에서 다운로드 하기">
+                            <!-- <div class="ios text-ss">App Store에서 다운로드 하기</div> -->
+                        </a>
+                        <a href="https://tinyurl.com/tsudzog" target="_blank">
+                            <img src="./img/install-android.png" class="android" alt="다운로드하기 Google Play">
+                            <!-- <div class="android text-ss">다운로드하기 Google Play</div> -->
+                        </a>
+                    </div>
+                </div>
+        </div>
+        <script src="./javascript/login_main.js"></script>
+</body>
+
+</html>

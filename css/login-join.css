@@ -1,0 +1,108 @@
+.login--join {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 32px;
+}
+.join--wrapper {
+  width: 350px;
+  height: 561px;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  position: relative;
+}
+.join--box {
+  margin: 0 auto;
+  text-align: center;
+}
+.join--box .join--induce {
+  font-size: 17px;
+  font-weight: bold;
+  color: #8e8e8e;
+  line-height: 1.3;
+}
+
+.btn-join a div img {
+}
+.join--login--wrapper {
+  width: 350px;
+  height: 69.6px;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  /* position: relative; */
+  text-align: center;
+}
+
+.join--login {
+  width: 318px;
+  height: 17.6px;
+  margin: 26px auto;
+}
+
+.join--login a {
+  font-size: 14px;
+  color: #0095f6;
+}
+.policy--wrapper {
+  width: 100%;
+  font-size: 14px;
+  color: #828282;
+  line-height: 1.3;
+}
+
+.policy--wrapper div {
+  width: 228px;
+  height: 52.8px;
+  margin: 0 auto;
+}
+.policy--wrapper div a {
+  font-size: 14px;
+  color: #828282;
+  font-weight: bold;
+}
+
+.app--download {
+  width: 350px;
+  height: 100.8px;
+  margin: 0 auto;
+  text-align: center;
+}
+.app--download .app--induce {
+  width: 310px;
+  height: 17.6px;
+  margin: 17px 20px;
+}
+.app--install {
+  width: 290px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.app--install .ios {
+  width: 136px;
+  height: 40px;
+  background: red;
+  border-radius: 5px;
+}
+
+.app--install .android {
+  width: 134.28px;
+  height: 40px;
+  background: blue;
+  border-radius: 5px;
+}
+
+.error-msg {
+  height: 8px;
+  font-weight: bold;
+  color: red;
+  font-size: 12px;
+  margin: 8px auto 0 auto;
+}

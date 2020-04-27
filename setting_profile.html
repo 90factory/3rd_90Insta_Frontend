@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <title>Instagram</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/setting.css" />
+
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script src="./javascript/ajax.js"></script>
+  <script>
+    profileGet_pofile()
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="inner">
+        <div class="left_side">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                alt="인스타그램 로고" />
+            </a>
+          </div>
+        </div>
+
+        <div class="middle_side">
+          <div class="search_box">
+            <!-- <img src="img/icon_search.png" alt="돋보기" style="width: 10px;"> -->
+            <input type="text" placeholder="검색" id="search_field" />
+          </div>
+
+          <!-- <div class="fake_field">
+                        <img src="img/icon_search.png" alt="돋보기" style="width: 10px;">
+                        <span>검색</span>
+                        <img src="img/icon_search_cancel.png" alt="취소 버튼" style="width: 10px;">
+                    </div> -->
+        </div>
+
+        <div class="right_side">
+          <div class="header_icon">
+            <a href="./index.html">
+              <img src="img/icom_empty home.png" alt="icon_home_empty" class="icon" />
+            </a>
+            <a href="#">
+              <img src="img/icon_newfeed.png" alt="icon_new_feed" class="icon" />
+            </a>
+
+            <a href="#" class="history">
+              <img src="img/icon_heart.png" alt="icon_history" class="icon" />
+            </a>
+
+            <a href="./myfeed.html">
+              <img src="img/pic_3.jpg" alt="icon_myprofile" class="icon_myprofile selected" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- <section class="main_content">
+            <div class="wrapper"></div>
+        </section> -->
+    <section class="setting_wrapper">
+      <div class="setting_list">
+        <ul>
+          <li class="m_text"><a href="#" class="ckeck">프로필 편집</a></li>
+          <li class="m_text">
+            <a href="./setting_pw.html">비밀번호 변경</a>
+          </li>
+          <li class="m_text"><a href="">앱 및 웹사이트</a></li>
+          <li class="m_text"><a href="">이메일 및 SMS</a></li>
+          <li class="m_text"><a href="">푸시 알림</a></li>
+          <li class="m_text"><a href="">연락처 관리</a></li>
+          <li class="m_text"><a href="">공개 범위 및 보안</a></li>
+          <li class="m_text"><a href="">로그인 활동</a></li>
+          <li class="m_text"><a href="">Instagram에서 보낸 이메일</a></li>
+        </ul>
+      </div>
+
+      <div class="setting_box">
+        <form id="profile_form" action="" method="POST" enctype="multipart/form-data">
+          <div class="setting_profile">
+            <aside class="claerfix">
+              <img id="my_image" src="./img/default_profile_image.jpg" alt="프로필 사진" />
+            </aside>
+            <div>
+              <div id="my_nickname">byulstargram</div>
+              <button>
+                <label for="filename">프로필 사진 바꾸기</label>
+              </button>
+            </div>
+            <!-- <input type="file" name="filename" /> -->
+            <!-- <input  multiple="multiple" type="file" name="filename" /> -->
+          </div>
+          <div class="setting_contents">
+            <aside class="claerfix">
+            </aside>
+            <div>
+              <!-- <input type='file' id="imgInp" /> -->
+              <input type="file" id="small_img" name="image" accept=".jpg,.jpeg,.png" />
+            </div>
+            <img id="blah" src="#" alt="" />
+            <!-- <input  multiple="multiple" type="file" name="filename" /> -->
+          </div>
+
+          <div class="setting_contents">
+            <aside>
+              <label for="set_nickname">닉네임</label>
+            </aside>
+            <div>
+              <input type="text" id="set_nickname" name="nickname" />
+            </div>
+          </div>
+
+          <div class="setting_contents">
+            <aside>
+              <label for="set_name">이름</label>
+            </aside>
+            <div>
+              <input type="text" class="set_name" name="name" />
+            </div>
+          </div>
+
+          <div class="setting_contents">
+            <aside>
+              <label for="set_info">소개</label>
+            </aside>
+            <div>
+              <textarea rows="5" cols="20" id="set_info" name="intro"></textarea>
+              <!-- <input type="text" class="input_long"> -->
+            </div>
+          </div>
+          <div class="error-msg"></div>
+          <div class="setting_contents">
+            <aside>
+              <label for="set_submit"></label>
+            </aside>
+
+            <div class="submit_wrap">
+              <button type="button" id="set_submit" class="btn_submit" onclick="profileChange()">
+                제출
+                </buttontype="button">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_wrapper">
+        <div class="footer_left">
+          <ul>
+            <li>
+              <a href="https://about.instagram.com/about-us" target="_blank">
+                소개
+              </a>
+            </li>
+            <li>
+              <a href="https://help.instagram.com/" target="_blank">
+                도움말
+              </a>
+            </li>
+            <li>
+              <a href="https://help.instagram.com/" target="_blank">
+                홍보 센터
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/developer/" target="_blank">
+                API
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/about/jobs/" target="_blank">
+                채용 정보
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/legal/privacy/" target="_blank">
+                개인정보처리방침
+              </a>
+            </li>
+            <li>
+              <a href="https://help.instagram.com/581066165581870" target="_blank">
+                약관
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/explore/locations/" target="_blank">
+                위치
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/directory/profiles/" target="_blank">
+                인기 계정
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/directory/hashtags/" target="_blank">
+                해시태그
+              </a>
+            </li>
+            <li>
+              <span class="_3G4x7 l93RR">언어
+                <select aria-label="표시 언어 변경" class="hztqj">
+                  <option value="af">Afrikaans</option>
+                  <option value="cs">Čeština</option>
+                  <option value="da">Dansk</option>
+                  <option value="de">Deutsch</option>
+                  <option value="el">Ελληνικά</option>
+                  <option value="en">English</option>
+                  <option value="es">Español (España)</option>
+                  <option value="es-la">Español</option>
+                  <option value="fi">Suomi</option>
+                  <option value="fr">Français</option>
+                  <option value="id">Bahasa Indonesia</option>
+                  <option value="it">Italiano</option>
+                  <option value="ja">日本語</option>
+                  <option value="ko">한국어</option>
+                  <option value="ms">Bahasa Melayu</option>
+                  <option value="nb">Norsk</option>
+                  <option value="nl">Nederlands</option>
+                  <option value="pl">Polski</option>
+                  <option value="pt-br">Português (Brasil)</option>
+                  <option value="pt">Português (Portugal)</option>
+                  <option value="ru">Русский</option>
+                  <option value="sv">Svenska</option>
+                  <option value="th">ภาษาไทย</option>
+                  <option value="tl">Filipino</option>
+                  <option value="tr">Türkçe</option>
+                  <option value="zh-cn">中文(简体)</option>
+                  <option value="zh-tw">中文(台灣)</option>
+                  <option value="bn">বাংলা</option>
+                  <option value="gu">ગુજરાતી</option>
+                  <option value="hi">हिन्दी</option>
+                  <option value="hr">Hrvatski</option>
+                  <option value="hu">Magyar</option>
+                  <option value="kn">ಕನ್ನಡ</option>
+                  <option value="ml">മലയാളം</option>
+                  <option value="mr">मराठी</option>
+                  <option value="ne">नेपाली</option>
+                  <option value="pa">ਪੰਜਾਬੀ</option>
+                  <option value="si">සිංහල</option>
+                  <option value="sk">Slovenčina</option>
+                  <option value="ta">தமிழ்</option>
+                  <option value="te">తెలుగు</option>
+                  <option value="vi">Tiếng Việt</option>
+                  <option value="zh-hk">中文(香港)</option>
+                  <option value="bg">Български</option>
+                  <option value="fr-ca">Français (Canada)</option>
+                  <option value="ro">Română</option>
+                  <option value="sr">Српски</option>
+                  <option value="uk">Українська</option>
+                </select>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_right">
+          &copy; 2020 INSTAGRAM FROM FACEBOOK
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./javascript/login_pw_find.js"></script>
+
+</body>
+
+</html>
