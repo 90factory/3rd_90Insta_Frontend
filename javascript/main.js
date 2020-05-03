@@ -3,10 +3,8 @@ const sidebox = document.querySelector(".side_box");
 const variableWidth = document.querySelectorAll(".contents_box .contents");
 const delegation = document.querySelector(".contents_box");
 const writings = document.querySelector(".contents .writings");
-// const moreWatch = document.querySelector(".contents .moreWatch");
 
 
-// let start;
 var loadedPost;
 var start;
 var cnt;
@@ -16,19 +14,8 @@ var max_post
 
 function loadTemplate(user_id, post_index, post_id, user_photo_url, user_nickname, photo, text) {
 
-
-  console.log("loadTemplate 진입!!!")
-  console.log("post_index: ", post_index)
-  console.log("post_id: ", post_id)
-
-
-
   contents = document.getElementsByClassName("contents")
 
-
-
-  console.log("contents: ", contents)
-  console.log("user_nickname: ", user_nickname)
   contents[post_index].id = post_id;
   contents[post_index].querySelector(
     "div.profile_img > img"
@@ -45,20 +32,14 @@ function loadTemplate(user_id, post_index, post_id, user_photo_url, user_nicknam
   contents[post_index].querySelector("button.deleteBtn").id = 'btn_' + post_id;
 
   post_index = post_index + 1
-  // $(".contents_box").append(contents);
 
   return post_index
-
 
 }
 
 
 
 function getPost(loadedPost, index, cnt) {
-  console.log("getPost 진입!")
-  console.log("loadedPost: ", loadedPost)
-  console.log("index: ", index)
-  console.log("cnt: ", cnt)
 
   let user_photo_url;
 
@@ -76,8 +57,6 @@ function getPost(loadedPost, index, cnt) {
     const post_id = loadedPost[i].id;
     const text = loadedPost[i].text;
     const photo = loadedPost[i].photos[0].photo; //일단 한 장의 사진만..
-    // const comment = response[i].comment;
-
 
     loadTemplate(user_id, post_index, post_id, user_photo_url, user_nickname, photo, text);
     post_index = post_index + 1
@@ -87,8 +66,6 @@ function getPost(loadedPost, index, cnt) {
 
 function delegationFunc(e) {
   let elem = e.target;
-
-  // console.log(elem);
 
   while (!elem.getAttribute("data-name")) {
     elem = elem.parentNode;
@@ -123,7 +100,6 @@ function delegationFunc(e) {
       },
     });
   } else if (elem.matches('[data-name="bookmark"]')) {
-    console.log("북마크!");
 
     var pk = elem.getAttribute("name");
 
@@ -279,43 +255,17 @@ function resizeFunc() {
 }
 
 function scrollFunc() {
-  //   let scrollHeight = pageYOffset + window.innerHeight;
-  //   let documentHeight = document.body.scrollHeight;
+
 
   let scrollHeight = window.innerHeight + window.scrollY;
   let documentHeight = document.body.offsetHeight - 1;
-
-  // console.log("scrollHeight : " + scrollHeight);
-  // console.log("documentHeight : " + documentHeight);
-
-  // if (pageYOffset >= 10) {
-  //   header.classList.add("on");
-
-  //   if (sidebox) {
-  //     sidebox.classList.add("on");
-  //   }
-
-  //   resizeFunc();
-  // } else {
-  //   header.classList.remove("on");
-
-  //   if (sidebox) {
-  //     sidebox.classList.remove("on");
-  //     sidebox.removeAttribute("style");
-  //   }
-  // }
 
   if (scrollHeight >= documentHeight) {
     if (page > max_post) {
       return false;
     } // 무한스크롤 기능 200페이지까지 수용가능
     var page = document.querySelector("#page").value;
-    console.log("현재 page number: " + page);
-    // page = parseInt(page) + 1;
-    // page = parseInt(page) + 1;
     document.querySelector("#page").value = parseInt(page) + 1;
-    // $('#page').val(parseInt(page) + 1);
-
 
     callMorePostAjax(page);
   }
@@ -335,7 +285,7 @@ function callMorePostAjax(page) {
     dataType: 'html',
     error: function (request, status, error) {
       alert('오류가 발생했습니다.');
-      // alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+
     },
   });
 }
@@ -355,6 +305,5 @@ if (delegation) {
 }
 
 
-// moreWatch.addEventListener("click", moreClick);
 window.addEventListener("resize", resizeFunc);
 window.addEventListener("scroll", scrollFunc);
